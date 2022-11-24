@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(180, 28, 28);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f8f1f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar b {
+  float: left;
+  display: block;
+  color: #f3eaea;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: rgb(70, 57, 57);
+  color: rgb(226, 213, 213);
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.button1 {
+  background-color: #a97215
+}
+
+.button2 {
+  background-color: #4f559e
+}
+
+.button3 {
+  background-color: rgb(161, 11, 136)
+}
+
+button {
+  cursor: pointer;
+}
+
+.main .button4 {
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.center :hover{
+  background: rgb(214, 206, 206);
+  color: rgb(192, 16, 16);
+}
+
+td, th {
+  border: 1px solid #c71212;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #d4caca;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <b class="navbar-brand" href="#">Expense Tracker</b>
+  <a href="#categories">Categories</a>
+  <a href="#dashboard">Dashboard</a>
+</div>
+
+<div class="main">
+  <h1>All Expenses</h1>
+  
+  <div class="center">
+  <button type="button" class="button button4" onclick="alert('Hello world!')">Add New Category</button>
+  </div>
+  
+  <table>
+  <tr>
+    <th>SN</th>
+    <th>Category Name</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>General</td>
+    <td>
+    	<button type="button" class="button button1" onclick="alert('Hello world!')">View</button>
+        <button type="button" class="button button2" onclick="alert('Hello world!')">Update</button>
+        <button type="button" class="button button3" onclick="alert('Hello world!')">Delete</button>
+    </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Food</td>
+    <td>
+    	<button type="button" class="button button1" onclick="alert('Hello world!')">View</button>
+        <button type="button" class="button button2" onclick="alert('Hello world!')">Update</button>
+        <button type="button" class="button button3" onclick="alert('Hello world!')">Delete</button>
+    </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Pet</td>
+    <td>
+    	<button type="button" class="button button1" onclick="alert('Hello world!')">View</button>
+        <button type="button" class="button button2" onclick="alert('Hello world!')">Update</button>
+        <button type="button" class="button button3" onclick="alert('Hello world!')">Delete</button>
+    </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Clothing</td>
+    <td>
+    	<button type="button" class="button button1" onclick="alert('Hello world!')">View</button>
+        <button type="button" class="button button2" onclick="alert('Hello world!')">Update</button>
+        <button type="button" class="button button3" onclick="alert('Hello world!')">Delete</button>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Kitchen</td>
+    <td>
+    	<button type="button" class="button button1" onclick="alert('Hello world!')">View</button>
+        <button type="button" class="button button2" onclick="alert('Hello world!')">Update</button>
+        <button type="button" class="button button3" onclick="alert('Hello world!')">Delete</button>
+    </td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Travelling</td>
+    <td>
+    	<button type="button" class="button button1" onclick="alert('Hello world!')">View</button>
+        <button type="button" class="button button2" onclick="alert('Hello world!')">Update</button>
+        <button type="button" class="button button3" onclick="alert('Hello world!')">Delete</button>
+    </td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
